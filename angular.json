@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dragndrop"
+    }
+  },
+  "defaultProject": "dragndrop",
+  "cli": {
+    "analytics": "11e88197-8388-45fa-98b2-f1f5b1e0453f"
+  }
 }
