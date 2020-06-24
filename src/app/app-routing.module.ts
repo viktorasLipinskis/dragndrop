@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import { DragndropComponent } from './dragndrop/dragndrop.component';
 
-const routes: Routes = [{ path: '', component: AppComponent }];
+const routes: Routes = [
+  { path: 'demo', component: DragndropComponent, pathMatch: 'full' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
