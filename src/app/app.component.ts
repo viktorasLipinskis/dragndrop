@@ -39,7 +39,7 @@ export class AppComponent {
         {
           id: '1_1',
           name: 'Item 1',
-          path: '',
+          path: '/settings',
         },
       ],
     },
@@ -50,7 +50,7 @@ export class AppComponent {
         {
           id: '2_1',
           name: 'About',
-          path: '',
+          path: '/about',
         },
       ],
     },

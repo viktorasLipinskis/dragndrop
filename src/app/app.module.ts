@@ -12,9 +12,11 @@ import {
   DxFormModule,
 } from 'devextreme-angular';
 import { ProposalComponent } from './proposal/proposal.component';
+import { SettingsComponent } from './settings/settings.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, DragndropComponent, ProposalComponent],
+  declarations: [AppComponent, DragndropComponent, ProposalComponent, SettingsComponent, AboutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
