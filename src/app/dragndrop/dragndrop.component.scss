@@ -1,9 +1,15 @@
 .widget-container {
   display: flex;
-}
-
-.widget-container > * {
+  flex-direction: column;
   height: 400px;
-  width: 50%;
   padding: 10px;
+
+  .info {
+    background: lightgrey;
+    padding: 24px;
+  }
+
+  .list-content {
+    display: flex;
+  }
 }

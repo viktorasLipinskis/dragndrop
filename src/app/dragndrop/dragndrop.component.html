@@ -1,26 +1,33 @@
 <div id="list-demo">
   <div class="widget-container">
-    <dx-list [items]="plannedTasks" [repaintChangesOnly]="true" keyExpr="id">
-      <dxo-item-dragging
-        group="tasks"
-        [data]="plannedTasks"
-        [allowReordering]="true"
-        [onDragStart]="onDragStart"
-        [onAdd]="onAdd"
-        [onRemove]="onRemove"
-      >
-      </dxo-item-dragging>
-    </dx-list>
-    <dx-list [items]="doingTasks" [repaintChangesOnly]="true" keyExpr="id">
-      <dxo-item-dragging
-        group="tasks"
-        [data]="doingTasks"
-        [allowReordering]="true"
-        [onDragStart]="onDragStart"
-        [onAdd]="onAdd"
-        [onRemove]="onRemove"
-      >
-      </dxo-item-dragging>
-    </dx-list>
+    <span class="info"
+      >Implemented simple drag and drop list, but it could work only with string
+      objects. As I found devExtreme supports only simple drag and drops
+      (without capability to write your own components).</span
+    >
+    <div class="list-content">
+      <dx-list [items]="plannedTasks" [repaintChangesOnly]="true" keyExpr="id">
+        <dxo-item-dragging
+          group="tasks"
+          [data]="plannedTasks"
+          [allowReordering]="true"
+          [onDragStart]="onDragStart"
+          [onAdd]="onAdd"
+          [onRemove]="onRemove"
+        >
+        </dxo-item-dragging>
+      </dx-list>
+      <dx-list [items]="doingTasks" [repaintChangesOnly]="true" keyExpr="id">
+        <dxo-item-dragging
+          group="tasks"
+          [data]="doingTasks"
+          [allowReordering]="true"
+          [onDragStart]="onDragStart"
+          [onAdd]="onAdd"
+          [onRemove]="onRemove"
+        >
+        </dxo-item-dragging>
+      </dx-list>
+    </div>
   </div>
 </div>

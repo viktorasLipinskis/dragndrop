@@ -18,8 +18,15 @@ export class AppComponent {
       items: [
         {
           id: '0_1',
-          name: 'First Demo',
+          name: 'Simple List',
           path: '/demo',
+          icon:
+            'https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/products/1.png',
+        },
+        {
+          id: '0_2',
+          name: 'Proposal',
+          path: '/proposal',
           icon:
             'https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/products/1.png',
         },
