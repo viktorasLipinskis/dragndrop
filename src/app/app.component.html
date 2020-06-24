@@ -1,9 +1,15 @@
-<nav>
-  <ul>
-    <li>
-      <a routerLink="/demo" routerLinkActive="active">Drag and drop demo</a>
-    </li>
-  </ul>
-</nav>
-<!-- The routed views render in the <router-outlet>-->
-<router-outlet></router-outlet>
+<dx-menu
+  #menu
+  [dataSource]="menuItems"
+  displayExpr="name"
+  [showFirstSubmenuMode]="showFirstSubmenuModes"
+  orientation="horizontal"
+  submenuDirection="auto"
+  [hideSubmenuOnMouseLeave]="false"
+  (onItemClick)="itemClick($event)"
+>
+</dx-menu>
+
+<div id="content">
+  <router-outlet></router-outlet>
+</div>
