@@ -1,0 +1,27 @@
+.proposal {
+  display: flex;
+  flex-direction: column;
+  &__info {
+    background: lightgrey;
+    padding: 24px;
+  }
+
+  &__containers {
+    display: flex;
+    &__left-container {
+      display: flex;
+      flex: 0.5;
+      border: solid 1px black;
+      margin: 10px;
+      padding: 5px;
+    }
+
+    &__right-container {
+      display: flex;
+      flex: 1;
+      border: solid 1px black;
+      margin: 10px;
+      padding: 5px;
+    }
+  }
+}
